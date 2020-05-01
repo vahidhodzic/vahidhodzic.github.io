@@ -1,0 +1,204 @@
+/*@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville);*/
+@import url(https://fonts.googleapis.com/css?family=Cutive+Mono);
+body {
+  background-color: #FAB050;
+  background: url(http://res.cloudinary.com/bergquist/image/upload/v1496748828/BCKG-1-pexels-photo-94576_web_rqmcs0.png);
+  background-size: auto;
+  font-family: 'Cutive Mono';
+  color: #000;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  width: 100%;
+  margin: 50px auto;
+  /*padding: 20px;*/
+  padding-top: 0;
+  
+}
+
+#container h1 {
+  text-align: center;
+  color: #000;
+}
+
+#idiomContainer {
+  width: 75%;
+  /*background: #FAB050;*/
+
+  padding: 10px;
+  margin: 30px auto;
+  text-align: center;
+  background: rgba(170, 170, 170, 0.67);
+    /*border: 1px solid #000000;*/
+    /*border-radius: 5px;*/
+  /*height: 100px;*/
+}
+
+#buttonContainer {
+  width: 100%;
+  text-align: center;
+}
+
+#quoteButton {
+  background-color: black;
+  width: 10%;
+  font-size: 2em;
+  margin-top: 10px;
+  border: 2px solid #000;
+  /*border-radius: 3px;*/
+  color: white;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+}
+
+#quoteButton:active {
+  cursor: pointer;
+}
+
+.tweetButton {
+  background-color: #7EEEE4;
+  width: 50px;
+  margin-top: 10px;
+  border: 2px solid #7EEEE4;
+  border-radius: 3px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px;
+  text-decoration: none;
+}
+
+h1{
+
+  /*font-style: italic;*/
+  font-size:40px;
+}
+
+/*#znacenje::first-letter {
+  font-size: 200%;
+  color: #black;
+  font-weight: 900;
+}*/
+
+#idiom{
+
+  font-size: 46px;
+  font-style: italic;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+.tweetButton:before {
+  font-family: FontAwesome;
+  margin: 10px;
+}
+
+#znacenje {
+  text-align: center;
+  font-size: 25px;
+}
+
+
+#upotreba {
+  text-align: center; 
+  font-size: 18px;
+}
+
+
+q {
+  quotes: "?" "?" "?" "?";
+}
+
+#idiom::before {
+    content: open-quote;
+}
+
+#idiom:after {
+    content: close-quote;
+}
+
+#idiom_boldovano{
+  font-weight: bold;
+  font-style: italic;
+  font-size:22px;
+}
+
+#by{
+
+  text-align: right;
+  padding-right: 30px;
+  padding-left: 30px;
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  background: rgb(2, 2, 2);
+  color:white;
+
+}
+
+#by a{
+  text-decoration: none;
+  color:white;
+}
+
+
+@media (max-width: 400px) {  
+    h1 {
+    font-size: 3em !important;
+    margin:20px;
+  }
+  body{
+    height: 100% !important;
+    width: 100% !important;
+  }
+
+  #idiom{
+    font-size: 2.3em !important;
+    /*margin:50px;*/
+  }
+  #znacenje{
+    font-size: 2em !important;
+    /*margin:50px;*/
+  }
+  #znacenje2{
+    font-size: 1em !important;
+  }
+  #upotreba{
+    font-size: 2em !important;
+    /*margin:50px;*/
+  }
+  #idiom_boldovano{
+    font-size: 1em !important;
+  }
+
+  #quoteButton{
+    width: 90% !important;
+    font-size: 2em !important;
+
+  }
+  #container{
+    height: 100% !important;
+    width: 100% !important;
+  }
+ 
+  #buttonContainer{
+     height: 100px;
+   
+  }
+  #by{
+        position: relative !important;
+        background: rgb(2, 2, 2);
+        text-align: center !important;
+        padding: 0 !important; 
+  }
+  #by a{
+    text-decoration: none !important;
+    color:white;
+
+  }
+}

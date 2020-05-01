@@ -1,0 +1,29 @@
+// Button Styles
+.btn {
+  @include heading-font;
+  font-weight: 700;
+}
+
+.btn-xl {
+  font-size: 18px;
+  padding: 20px 40px;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #32a6ff 0%, #3f6fff 49%, #8d54ff 82%);
+
+    background: linear-gradient(45deg, #32a6ff 0%, #3f6fff 49%, #8d54ff 82%);
+
+  &:active,
+  &:focus,
+  &:hover {
+    
+    background: linear-gradient(120deg, #32a6ff 0%, #3f6fff 49%, #8d54ff 82%);
+    // border-color: darken($primary, 7.5%) !important;
+    color: white;
+  }
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(254, 209, 55,.5) !important;
+  }
+}
