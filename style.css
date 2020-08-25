@@ -86,7 +86,7 @@ body {
         -o-transition: box-shadow 0.5s;
         transition: box-shadow 0.5s;
         transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
-        max-width: 400px;
+        max-width: 500px;
         overflow: hidden;
         max-height: 600px;
         border-radius: 10px;
