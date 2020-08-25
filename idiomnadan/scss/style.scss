@@ -1,0 +1,16 @@
+body{
+
+	.test{
+
+		background-color: yellow;
+		li{
+			padding: 10;
+			
+			ul{
+				a{
+					color:black;
+				}
+			}
+		}
+	}
+}
