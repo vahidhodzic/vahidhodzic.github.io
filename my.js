@@ -15,9 +15,8 @@ var mouse = {
       CY  : mouse.CY
     },
     imags = [
-      'V-tinified.jpg?w=940&h=650&auto=compress&cs=tinysrgb',
-      // 'http://idiomnadan.com/vahid/V-O.jpg?w=940&h=650&auto=compress&cs=tinysrgb',
-      'V-O2.jpg?w=940&h=650&auto=compress&cs=tinysrgb'
+      'V-tinified.jpg?w=940&h=650&auto=compress&cs=tinysrgb'      
+      // 'V-O2.jpg?w=940&h=650&auto=compress&cs=tinysrgb'
      
     ];
 
