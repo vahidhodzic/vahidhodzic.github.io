@@ -189,16 +189,23 @@ body {
 
 @media only screen and (max-width: 600px) {
   .slider .items-group .item .block {
-    width: 700px;
+    width: 340px;
     height: 800px;
   }
+  .slider .items-group .item .block h2 {
+    font-size: 80px;
+  }
   .slider .items-group .item .block p {
-    font-size: 3rem;
+    font-size: 1.6rem;
   }
   .cnt strong {
-    font-size: 2.6rem;
+    font-size: 1.6rem;
   }
   .cnt a {
-    font-size: 3rem;
+    font-size: 1.8rem;
+  }
+  .cnt p {
+    display: flex;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */
