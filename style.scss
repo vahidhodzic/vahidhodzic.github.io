@@ -236,7 +236,9 @@ body {
       font-size: 1.6rem;
     }
     a{
-      font-size: 1.8rem;
+      font-size: 1.4rem;
+      word-break: break-all;
+      word-wrap: break-word;
     }
     p{
       display: flex;
