@@ -15,9 +15,9 @@ var mouse = {
       CY  : mouse.CY
     },
     imags = [
-      'V-tinified.jpg?w=940&h=650&auto=compress&cs=tinysrgb'      
+      'V-tinified.jpg?w=940&h=650&auto=compress&cs=tinysrgb'
       // 'V-O2.jpg?w=940&h=650&auto=compress&cs=tinysrgb'
-     
+
     ];
 
 $('.block').on('mousemove', function(e) {
@@ -43,34 +43,34 @@ setInterval(function(){
 }, 20);
 
 $('.slider .item').each(function(i){
-  
+
   if(i == 0){
-    
+
     $(this).addClass('active');
     $(this).next().addClass('next');
     $(this).prev().addClass('prev');
   }
-  
+
   $(this).attr('id', 'slide-'+i);
-  
+
   $(this).prepend(
     $('<div>', {class: 'blur', style: 'background-image: url(' + imags[i] + ');'}),
     $('<div>', {class: 'bg', style: 'background-image: url(' + imags[i] + ');'})
   )
-  
-  $(this).find('.block').css('background-image', 'url(' + imags[i] + ')')
-  
-  $('.navigations .dots').append(
-    $('<li>', {class: i == 0 ? 'active' : '', id: i}).on('click', function(){
-    var cSlide = $('.slider #slide-'+$(this).attr('id'));
-      
-      $('.navigations .dots li').removeClass('active');
-      $(this).addClass('active');
-      
-      $('.slider .item').removeClass('active prev next');
-      cSlide.addClass('active');
-      cSlide.next().addClass('next');
-      cSlide.prev().addClass('prev');
-    })
-  )
+
+  // $(this).find('.block').css('background-image', 'url(' + imags[i] + ')')
+
+  // $('.navigations .dots').append(
+  //   $('<li>', {class: i == 0 ? 'active' : '', id: i}).on('click', function(){
+  //   var cSlide = $('.slider #slide-'+$(this).attr('id'));
+
+  //     $('.navigations .dots li').removeClass('active');
+  //     $(this).addClass('active');
+
+  //     $('.slider .item').removeClass('active prev next');
+  //     cSlide.addClass('active');
+  //     cSlide.next().addClass('next');
+  //     cSlide.prev().addClass('prev');
+  //   })
+  // )
 })
