@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
 }
 
 .slider {
@@ -73,9 +74,9 @@ body {
   padding: 20px;
   color: #ffffff;
   transition: box-shadow 0.5s;
-  max-width: 500px;
+  max-width: 550px;
   overflow: hidden;
-  max-height: 600px;
+  max-height: 500px;
   border-radius: 10px;
   transform: scale(1.03);
   box-sizing: border-box;
@@ -83,6 +84,7 @@ body {
   background-position: inherit;
   background-attachment: fixed;
   box-shadow: none;
+  border: 10px double white;
 }
 .slider .items-group .item .block .circleLight {
   top: 0px;
@@ -183,4 +185,20 @@ body {
   color: #fff;
   font-size: 26px;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .slider .items-group .item .block {
+    width: 700px;
+    height: 800px;
+  }
+  .slider .items-group .item .block p {
+    font-size: 3rem;
+  }
+  .cnt strong {
+    font-size: 2.6rem;
+  }
+  .cnt a {
+    font-size: 3rem;
+  }
 }/*# sourceMappingURL=style.css.map */
